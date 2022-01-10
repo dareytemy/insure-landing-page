@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -19,19 +23,23 @@
 
 
   <!-- ****************************** HEADER AND NAV BAR ********************************** -->
-<header class="nav-container">
-  <div class="wrapper">
+<header>
+  <div class="wrapper nav-bar-container">
+    <a href="#">
     <img class="logo" src="images/logo.svg" alt="Insure Word-Mark Logo">
+    </a>
     <div class="mobile-hamburger">
       <img src="images/icon-hamburger.svg" alt="hamburger">
     </div>
     <nav class="nav-bar">
       <ul class="nav-bar-list">
-        <li class="nav-bar-item"><a href="#">How we work</a></li>
-        <li class="nav-bar-item"><a href="#">Blog</a></li>
-        <li class="nav-bar-item"><a href="#">Account</a></li>
-        <li class="nav-bar-item"><a href="#" class="btn">View plans</a></li>
+        <li><a href="#" class="nav-bar-item">How we work</a></li>
+        <li><a href="#" class="nav-bar-item">Blog</a></li>
+        <li><a href="#" class="nav-bar-item">Account</a></li>
       </ul>
+      <p>
+        <a href="#" class="btn">View plans</a>
+      </p>
     </nav>
   </div>
 </header>
@@ -40,15 +48,16 @@
 <!-- ****************************** HERO ********************************** -->
   <section class="hero">
     <div class="wrapper">
-
+      <!-- <img class="hero-left" src="images/bg-pattern-intro-left-desktop.svg" alt="A combination of spiral patterns"> -->
       <!-- Hero's Content -->
       <div class="hero-content">
+        <hr>
         <h1 class="main-heading">
           Humanizing your insurance.      
         </h1>
         <p>
           Get your life insurance coverage easier and faster. We blend our expertise 
-          and technology to help you find the plan that’s right for you. Ensure you 
+          and technology to help you find the plan that's right for you. Ensure you 
           and your loved ones are protected.
         </p>
         <p><a href="#" class="btn">View plans</a></p>
@@ -56,8 +65,16 @@
 
       <!-- Hero's Image -->
       <div class="hero-image">
-        <img src="images/image-intro-desktop.jpg" alt="A man, his wife, and his two children walking along a pathway">
+        <img 
+          srcset="images/image-header-mobile.jpg 375w, 
+            images/image-intro-desktop.jpg 540w"
+          
+          sizes="(max-width: 600px) 375px , 540px"
+          src="images/image-intro-desktop.jpg" 
+          alt="A man, his wife, and his two children walking along a pathway"
+        >
       </div>
+      <!-- <img class="hero-right" src="images/bg-pattern-intro-right-desktop.svg" alt="A combination of spiral patterns"> -->
     </div>
   </section>
 
@@ -65,6 +82,7 @@
 <!-- ****************************** WE ARE DIFFERENT ********************************** -->
   <section class="different">
     <div class="wrapper">
+      <hr>
       <h2>
         We're different
       </h2>
@@ -73,7 +91,7 @@
       <div class="card">
 
         <!-- 1st Card -->
-        <div id="card-1">
+        <div id="card-1" class="cards">
           <img src="images/icon-snappy-process.svg" alt="Energy Icon">
           <h3>
             Snappy Process
@@ -85,7 +103,7 @@
         </div>
 
         <!-- 2nd Card -->
-        <div id="card-2">
+        <div id="card-2" class="cards">
           <img src="images/icon-affordable-prices.svg" alt="Dollar Currency Icon">
           <h3>
             Affordable Prices
@@ -97,7 +115,7 @@
         </div>
 
         <!-- 3rd Card -->
-        <div id="card-3">
+        <div id="card-3" class="cards">
           <img src="images/icon-people-first.svg" alt="Energy Icon">
           <h3>
             People First
@@ -112,12 +130,12 @@
   </section>
 
 
-  <!-- ****************************** WE ARE DIFFERENT ********************************** -->
+  <!-- ****************************** FIND OUT MORE ABOUT OUR WORK ********************************** -->
   <section class="find-out">
     <div class="wrapper">
-      <h2>
+      <h3>
         Find out more about how we work
-      </h2>
+      </h3>
       <p class="btn">
         How we work
       </p>

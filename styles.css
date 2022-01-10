@@ -1,0 +1,301 @@
+/* Variables
+------------------------------------------- */
+
+:root {
+
+    /* Primary Colors */
+    --dark-violet: #2d2640;
+    --grayish-blue: #95a9c6;
+
+    /* Neutral Color */
+    --very-dark-violet: #2b272f;
+    --dark-grayish-giolet: #837d87;
+    --very-light-gray: #fafafa;
+}
+
+
+/* Global and Reset Styles
+----------------------------------- */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
+}
+
+body {
+background-color: white;
+}
+
+img {
+    object-fit: contain;
+}
+
+/* Styles
+--------------------------------------------- */
+
+
+/* Nav Bar 
+-----------------------------------------*/
+
+
+.wrapper  {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.mobile-hamburger {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-bar-container {
+    /* background-color: violet; */
+    height: 80px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-container img {
+    object-fit: contain;
+    margin-right: 549px;
+}
+
+.nav-bar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9375rem;
+}
+
+.btn {
+    text-transform: uppercase;
+    width: 146px;
+    height: 40px;
+    border: 1.5px solid #2C2830;
+    padding: 11.5px 28.5px;
+    color: #2C2830;
+    letter-spacing: 1.5px;
+    font-size: 0.8125rem;
+    margin-left: 2.0625rem;
+}
+
+.btn:hover {
+    background-color: #2C2830;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-bar-item {
+    color: #837D88;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    letter-spacing: 1.5px;
+    /* flex: 1 1 100%; */
+}
+
+.nav-bar-item:hover {
+    font-weight: bold;
+    color: #2C2830;
+}
+
+
+.nav-bar {
+    /* max-width: 480px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Hero Screen 
+---------------------------------------------*/
+
+.hero {
+    height: 37.5rem;
+    background-color: #2D2641;
+    padding-top: 6.5625rem;
+}
+
+h1 {
+    width: 33.75rem;
+    height: 8.75rem;
+    font-size: 4.5rem;
+    line-height: 4rem;
+    letter-spacing: -1px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+h1 + p {
+    width: 33.75rem;
+    height: 5.25rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: 0;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    color: white;
+    border: 1.5px solid white;
+    margin: 0;
+}
+
+.hero-content {
+    float: left;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-content: center; */
+    /* justify-content: center; */
+    margin-right: 1.875rem;
+}
+
+.hero .wrapper {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    position: relative;
+}
+
+hr {
+    width: 9.375rem;
+    height: 0.0625rem;
+    color: white;
+    /* margin-top: 6.5625rem; */
+    margin-bottom: 3.9375rem;
+}
+
+.hero-left {
+    position: absolute;
+    width: 697px;
+    height: 649px;
+    left: -503px;
+    top: 494px;
+}
+
+.hero-right {
+    position: absolute;
+    width: 697px;
+    height: 649px;
+    left: 1005px;
+    top: -57px;
+}
+
+
+/* We are different
+------------------------------------- */
+
+.different {
+    margin-top: 19.0625rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+    line-height: 4rem;
+    margin-bottom: 6rem;
+    color: #2C2830;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: auto;
+    letter-spacing: -0.024375rem;
+    color: #2C2830;
+    margin-bottom: 1rem;
+}
+
+h3 + p {
+    width: 350px;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: #837D88;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.875rem;
+}
+
+.cards {
+    width: 21.875rem;
+    height: 15.625rem;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards img {
+    width: 5.375rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* Find out more about our work
+------------------------------------------------- */
+
+.find-out {
+    width: 69.375rem;
+    height: 15.625rem;
+    background: #2D2641;
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin: 0 auto;
+    padding: 4.3125rem 5rem;
+}
+
+
+.find-out h3 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+    letter-spacing: -0.04875rem;
+    width: 29.6875rem;
+    height: 7rem;
+    color: white;
+    margin-right: 19.625rem;
+}
+
+.find-out .btn {
+    width: 10rem;
+    height: 2.5rem;
+    border: 0.09375rem solid white;
+}
+
+.find-out p {
+    font-size: 0.8125rem;
+    letter-spacing: 0.09375rem;
+    color: white;
+    margin: 0.8125rem 1.53125rem;
+}
+
+.find-out .wrapper {
+    display: flex;
+    align-items: center;
+}
