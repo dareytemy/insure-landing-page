@@ -31,6 +31,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'DM Serif Display', serif;
+    font-weight: 400;
 }
 
 body {
@@ -50,7 +51,7 @@ img {
 
 
 .wrapper  {
-    max-width: 1120px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 
@@ -67,7 +68,6 @@ li {
 }
 
 .nav-bar-container {
-    /* background-color: violet; */
     height: 80px;
     padding: 20px 0;
     display: flex;
@@ -87,7 +87,7 @@ li {
     gap: 0.9375rem;
 }
 
-.btn {
+.nav-bar .btn {
     text-transform: uppercase;
     width: 146px;
     height: 40px;
@@ -96,25 +96,31 @@ li {
     color: #2C2830;
     letter-spacing: 1.5px;
     font-size: 0.8125rem;
+    font-weight: 700;
     margin-left: 2.0625rem;
+}
+
+.btn {
+    transition-duration: 0.4s;
 }
 
 .btn:hover {
     background-color: #2C2830;
     color: white;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .nav-bar-item {
     color: #837D88;
     text-transform: uppercase;
     font-size: 0.8125rem;
+    font-weight: 700;
     letter-spacing: 1.5px;
     /* flex: 1 1 100%; */
 }
 
 .nav-bar-item:hover {
-    font-weight: bold;
+    font-weight: 700;
     color: #2C2830;
 }
 
@@ -151,6 +157,7 @@ h1 + p {
     width: 33.75rem;
     height: 5.25rem;
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.625rem;
     letter-spacing: 0;
     color: white;
@@ -161,14 +168,24 @@ h1 + p {
     color: white;
     border: 1.5px solid white;
     margin: 0;
+    text-transform: uppercase;
+    width: 146px;
+    height: 40px;
+    border: 1.5px solid white;
+    padding: 11.5px 28.5px;
+    letter-spacing: 1.5px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+}
+
+.hero .btn:hover {
+    color: #2C2830;
+    background-color: white;
+    margin: 0;
 }
 
 .hero-content {
     float: left;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-content: center; */
-    /* justify-content: center; */
     margin-right: 1.875rem;
 }
 
@@ -183,7 +200,6 @@ hr {
     width: 9.375rem;
     height: 0.0625rem;
     color: white;
-    /* margin-top: 6.5625rem; */
     margin-bottom: 3.9375rem;
 }
 
@@ -218,7 +234,7 @@ h2 {
     color: #2C2830;
 }
 
-h3 {
+.different h3 {
     font-size: 1.75rem;
     line-height: auto;
     letter-spacing: -0.024375rem;
@@ -226,7 +242,7 @@ h3 {
     margin-bottom: 1rem;
 }
 
-h3 + p {
+.different h3 + p {
     width: 350px;
     font-size: 1rem;
     line-height: 1.625rem;
@@ -260,42 +276,191 @@ h3 + p {
 ------------------------------------------------- */
 
 .find-out {
-    width: 69.375rem;
-    height: 15.625rem;
-    background: #2D2641;
-    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+    /* max-width: 69.375rem; */
+    /* max-height: 15.625rem; */
+    margin-left: 10.3125rem;
+    margin-right: 10.3125rem;
+    margin-top: 9.875rem;
+    margin-bottom: 9.375rem;
+    padding: 4.3125rem 5rem;
+    background-color: #2D2641;
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg) ;
     background-repeat: no-repeat;
     background-position: top right;
-    margin: 0 auto;
-    padding: 4.3125rem 5rem;
 }
-
 
 .find-out h3 {
+    max-width: 29.6875rem;
+    height: 7rem;
     font-size: 3.5rem;
     line-height: 3.5rem;
-    font-weight: 400;
     letter-spacing: -0.04875rem;
-    width: 29.6875rem;
-    height: 7rem;
     color: white;
-    margin-right: 19.625rem;
 }
 
-.find-out .btn {
-    width: 10rem;
-    height: 2.5rem;
+.find-out p a {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 00.09375rem;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.78125rem 1.53125rem;
     border: 0.09375rem solid white;
 }
 
-.find-out p {
-    font-size: 0.8125rem;
-    letter-spacing: 0.09375rem;
-    color: white;
-    margin: 0.8125rem 1.53125rem;
+.find-flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.find-out .wrapper {
+
+/* Footer
+-------------------------------------- */
+
+.footer {
+    background-color: #fafafa;
+    background-image: url(images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 4rem 0;
+}
+
+.logo-icons {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.25rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo-icons .icons img {
+    width: 1.5rem;
+}
+
+.footer hr {
+    width: 69.375rem;
+    color: #dadada;
+    margin-bottom: 3rem;
+}
+
+.quick-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-heading {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 0.9375rem;
+    letter-spacing: 0.09375rem;
+    text-transform: uppercase;
+    color: #837D88;
+    margin-bottom: 2.25rem;
+}
+
+.quick-links ul li a {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 0.9375rem;
+    letter-spacing: 0.09375rem;
+    text-transform: uppercase;
+    color: #2D2641;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.quick-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* Mobile Responsiveness Styles
+------------------------------------------------------------ */
+
+@media screen and (max-width:380px) {
+    
+
+    /* Nav Bar
+    ----------------------------------- */
+    .nav-bar-container {
+        width: 23.4375rem;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 11.4375rem;
+    }
+
+    .mobile-hamburger {
+        display: contents;
+    }
+    
+    .nav-bar {
+        display: none;
+    }
+
+
+    /* Hero Scrreen
+    --------------------------------------- */
+    hr:first-of-type {
+        display: none;
+    }
+
+    h1 {
+        width: 20.4375rem;
+        height: 6rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: -0.041875rem;
+        text-align: center;
+    }
+
+    h1 + p {
+        width: 20.4375rem;
+        height: 8.125rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.625rem;
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+    .hero {
+        /* height: 37.5rem; */
+        /* background-color: #2D2641; */
+        padding: 0;
+    }
+
+    .hero .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 23.4375rem;
+        height: 31.25rem;
+        background-color: #2D2641;
+        padding: 5.8125rem 1.5rem;
+        margin: 0;
+    }
+
 }
